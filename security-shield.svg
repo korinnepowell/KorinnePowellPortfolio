@@ -1,0 +1,30 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0da9c8"/>
+      <stop offset="100%" stop-color="#b2183c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield Base -->
+  <path d="M60 10 L100 30 V60 C100 90 75 110 60 115 C45 110 20 90 20 60 V30 Z"
+        fill="url(#shieldGradient)"
+        stroke="#111"
+        stroke-width="3"
+        stroke-linejoin="round"/>
+
+  <!-- Lock Body -->
+  <rect x="45" y="55" width="30" height="28" rx="5" ry="5"
+        fill="white" opacity="0.9"/>
+
+  <!-- Lock Shackle -->
+  <path d="M50 55 C50 45 70 45 70 55"
+        stroke="white"
+        stroke-width="4"
+        fill="none"
+        opacity="0.9"/>
+
+  <!-- Keyhole -->
+  <circle cx="60" cy="68" r="4" fill="#333"/>
+  <rect x="58" y="68" width="4" height="8" fill="#333"/>
+</svg>
