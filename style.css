@@ -354,13 +354,14 @@ h2 {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 900px; /* make wider*/
+    width: 600px; /* make wider*/
     height: 400px;
     background: linear-gradient(135deg, var(--deep-cyan), var(--deep-red));
     border-radius: 50% 35% 60% 40% / 45% 60% 35% 55%;
-    filter: blur(10px) opacity(0.3);/* add blur and opacity*/
+    filter: blur(20px) opacity(0.3);/* add blur and opacity*/
     z-index: -1; /* should be in the back*/
 }
+
 
 
 
