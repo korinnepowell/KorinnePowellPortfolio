@@ -94,7 +94,7 @@ h2 {
     margin: 10px;
 }
 
-/* Buttons */
+/* The Buttons:)) */
 .btn {
     background: var(--deep-cyan);
     padding: 10px 20px;
@@ -165,7 +165,7 @@ h2 {
 
 
 /* ===============   SKILLS ===============   */
-.skills-grid {
+.skills-grid {    /*sskill grid for a nice layout */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 20px;
@@ -187,7 +187,7 @@ h2 {
 }
 
 .label {
-    display: none;
+    display: none;  /*no label until hover*/
     margin-top: 5px;
 }
 
@@ -195,6 +195,13 @@ h2 {
     display: block;  /*display name under icons on hover*/
 }
 
+/*my custom security icon since devicon does not have general security*/
+.security-icon {
+    width: 60px;  /*set it to same size*/
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
 /* ===============  RESUME ===============  */
 .resume-section {
     text-align: center;
@@ -361,6 +368,7 @@ h2 {
     filter: blur(20px) opacity(0.3);/* add blur and opacity*/
     z-index: -1; /* should be in the back*/
 }
+
 
 
 
