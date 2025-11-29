@@ -192,30 +192,49 @@ h2 {
 }
 
 /* ===============  RESUME ===============  */
-#resume {
-    display: flex;
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* center vertically */
-    flex-direction: column;
-    gap: 40px;                 /* spacing between the heading and button */
+.resume-section {
+    text-align: center;
 }
 
-#resume .btn {
-    background: linear-gradient(135deg, var(--deep-red), var(--deep-cyan), var(--soft-lavender));
-    padding: 40px 100px;   
-    border-radius: 90px;        /* make it somewhat oval*/
-    font-size: 20px;            /* text size */
-    color: white;               /* text color will be white */
+.resume-viewer {
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 3px solid var(--deep-cyan);
+}
+.resume-viewer {
+    padding: 10px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, var(--deep-cyan), var(--deep-red));
+}
+.resume-frame {
+    border-radius: 15px;
+}
+
+
+/* Embedded PDF Frame for resume */
+.resume-frame {
+    width: 100%;
+    height: 900px;
     border: none;
-    justify-content: center;
-    transition: 0.2s;   
 }
 
+/* Fallback link if is not seen*/
+.resume-alt {
+    margin-top: 15px;
+    font-size: 1rem;
+}
 
-#resume .btn:hover {
-    /* make it look like color change by flip gradient*/
-    background: linear-gradient(135deg, var(--soft-lavender), var(--deep-cyan), var(--deep-red));         
-    transform: scale(1.05);       
+.resume-alt a {
+    color: var(--deep-red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resume-alt a:hover {
+    text-decoration: underline;
 }
 /* ====================  SWIPER JS PROJECTS ===== ===============  */
 /* Swiper container */
@@ -319,3 +338,4 @@ h2 {
     padding: 10px;
     border: none;
 }
+
