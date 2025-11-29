@@ -65,6 +65,10 @@ h2 {
 .nav-links a:hover {
     color: var(--vibrant-blue);   /* nav lin text change on hover */
 }
+.nav-links a.active-section {
+    color: var(--deep-red);
+    font-weight: bold;
+}
 
 /* =======  HERO PAGE (MUST CREATE GOOD FIRST IMPRESSION!!) ========  */
 .hero {
@@ -320,6 +324,7 @@ h2 {
 }
 
 /* ====================   CONTACT ===== ===============  */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -338,4 +343,23 @@ h2 {
     padding: 10px;
     border: none;
 }
+
+/* Background splash behind contact form matches page colors*/
+.contact-section {
+    position: relative;
+}
+
+.contact-splash {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px; /* make wider*/
+    height: 400px;
+    background: linear-gradient(135deg, var(--deep-cyan), var(--deep-red));
+    border-radius: 50% 35% 60% 40% / 45% 60% 35% 55%;
+    filter: blur(10px) opacity(0.3);/* add blur and opacity*/
+    z-index: -1; /* should be in the back*/
+}
+
 
