@@ -316,9 +316,31 @@
     }
   });
 </script>
+<!-- Contact form --------------------->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
 
+    function activateSection() {
+        let scrollPos = window.scrollY + 200;
+
+        sections.forEach(sec => {
+            if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+                navLinks.forEach(link => link.classList.remove("active-section"));
+                const activeLink = document.querySelector(`.nav-links a[href="#${sec.id}"]`);
+                if (activeLink) activeLink.classList.add("active-section");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", activateSection);
+    activateSection(); // run on load
+});
+</script>
 </body>
 </html>
+
 
 
 
