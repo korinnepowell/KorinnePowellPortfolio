@@ -27,6 +27,7 @@ h2 {
     color: var(--deep-cyan);
     text-align: center;
     margin-bottom: 30px;
+    font-size: xx-large;
     text-shadow: 1px 1px 0px var(--soft-lavender);
     z-index: 1;
 }
@@ -216,6 +217,89 @@ h2 {
     background: linear-gradient(135deg, var(--soft-lavender), var(--deep-cyan), var(--deep-red));         
     transform: scale(1.05);       
 }
+/* ====================  SWIPER JS PROJECTS ===== ===============  */
+/* Swiper container */
+.mySwiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual slide styling */
+.project-card {
+    background: var(--light-accent);
+    margin: 0;
+    padding: 12px 15px 100px 15px;; /* set spacing on the card */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    height: 420px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    
+}
+
+/* Project image */
+.project-img {
+    width: 85%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 0px; /* reduce top spacing  */
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    object-fit: cover;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    
+}
+
+/* Title of the card */
+.project-card h3 {
+    font-size: 1.3rem;
+    color: var(--deep-red); /* Deep red maybe change? */
+    margin-bottom: 1px; /* create small seperation */
+    
+}
+
+/* Description on the card */
+.project-card p {
+    font-size: 1rem; /* alittle smaller than h3 */
+    color: var(--text-dark);
+    margin-bottom: 1px;
+   
+   
+}
+
+/* Live Link / GitHub Buttons */
+.project-btn {
+    padding: 10px 22px;
+    background: var(--deep-cyan);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.25s ease;
+    font-weight: bold;
+    
+   
+}
+
+.project-btn:hover {
+    background: var(--deep-red);
+    transform: scale(1.05);
+}
+.small-project-img {
+    max-height: 250px;
+    width: auto;
+    object-fit: contain;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
 /* ====================   CONTACT ===== ===============  */
 .contact-form {
     display: flex;
