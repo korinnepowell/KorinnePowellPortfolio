@@ -47,7 +47,7 @@ h2 {
 .nav-title {
     color: var(--white);
     font-weight: bold;
-    font-family:'Georgia', 'Times New Roman';   /* Georgia is nice maybe set global?  */
+    font-family: Arial, sans-serif;   /* Georgia is nice maybe set global?  */
 }
 
 .nav-links {
@@ -361,5 +361,6 @@ h2 {
     filter: blur(10px) opacity(0.3);/* add blur and opacity*/
     z-index: -1; /* should be in the back*/
 }
+
 
 
