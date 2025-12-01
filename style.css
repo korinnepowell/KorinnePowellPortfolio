@@ -331,42 +331,61 @@ h2 {
 }
 
 /* ====================   CONTACT ===== ===============  */
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* Container to shrink the form nicely with control can go bigger or smaller */
+.contact-container {
+    max-width: 630px;   /* reduce width here */
+    margin: 0 auto;
+    text-align: center;
 }
 
+/* Make inputs smaller but still readable */
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
-    border: 2px solid var(--dark-gray);
+    width: 100%;
+    padding: 10px 14px;          /* textpadding */
+    margin: 5px 0;               /* create smaller gaps */
+    border-radius: 8px;
+    background: var(--light-bg);
+    font-size: 0.95rem; 
+    border: 2px solid; /* need this for the border-image to show */
+    border-image: linear-gradient(to right, var(--deep-cyan), var(--deep-red)) 1; /* border-image gradient */      
 }
 
-.contact-form button {
-    background: var(--deep-cyan);
+/* textarea height */
+.contact-form textarea {
+    height: 100px;               /* smaller but its still readable */
+    resize: vertical;
+}
+
+/* Shrink the button slightly */
+.contact-form .btn {
+    padding: 8px 18px; 
+    font-size: 0.95rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--deep-red), var(--deep-cyan), var(--soft-lavender));
     color: var(--white);
-    padding: 10px;
-    border: none;
+}
+.contact-form .btn:hover { /* flip colors on hover and scale up*/
+    background: linear-gradient(135deg, var(--soft-lavender), var(--deep-cyan),var(--deep-red));
+    transform: scale(1.05);
+
 }
 
-/* Background splash behind contact form matches page colors*/
 .contact-section {
     position: relative;
 }
-
+/* Background splash behind contact form matches page colors*/
 .contact-splash {
     position: absolute;
-    top: 20px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px; /* make wider*/
+    width: 900px;
     height: 400px;
-    background: linear-gradient(135deg, var(--deep-cyan), var(--deep-red));
+    background: linear-gradient(135deg, var(--deep-red), var(--deep-cyan));
     border-radius: 50% 35% 60% 40% / 45% 60% 35% 55%;
-    filter: blur(20px) opacity(0.3);/* add blur and opacity*/
-    z-index: -1; /* should be in the back*/
+    filter: blur(10px) opacity(0.3);
+    z-index: -1;
 }
 
 
