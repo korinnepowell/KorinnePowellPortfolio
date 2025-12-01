@@ -333,7 +333,7 @@ h2 {
 /* ====================   CONTACT ===== ===============  */
 /* Container to shrink the form nicely with control can go bigger or smaller */
 .contact-container {
-    max-width: 630px;   /* reduce width here */
+    max-width: 610px;   /* reduce width here */
     margin: 0 auto;
     text-align: center;
 }
@@ -387,6 +387,7 @@ h2 {
     filter: blur(10px) opacity(0.3);
     z-index: -1;
 }
+
 
 
 
